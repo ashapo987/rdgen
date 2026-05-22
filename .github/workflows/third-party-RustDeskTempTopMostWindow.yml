@@ -61,7 +61,7 @@ jobs:
           url: "${{ secrets.GENURL }}/cleanzip"
           method: 'POST'
           customHeaders: '{"Content-Type": "application/json"}'
-          data: '{"uuid": "${{ env.uuid }}"}'
+          data: "{\"uuid\": \"${{ env.uuid }}\"}"
 
       - name: Download the source code
         run: |
